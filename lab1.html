@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Academic Dashboard</title>
+</head>
+<style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #5a7085;
+            color: #263449;
+        }
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background: #173b68;
+            color: white;
+            position: fixed;
+            padding: 25px 15px;
+        }
+        .sidebar h2 { text-align: center; }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 6px;
+            margin: 7px 0;
+        }
+        .sidebar a:hover { background: #315d91; }
+        .main {
+            margin-left: 220px;
+            padding: 25px;
+        }
+        .topbar {
+            background: white;
+            padding: 18px;
+            border-radius: 10px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 18px;
+            margin: 25px 0;
+        }
+        .card {
+            background: white;
+            padding: 22px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #b4bec9;
+        }
+        .card h3 { color: #55708e; }
+        .card h2 { color: #1765b0; }
+        .panel {
+            background: white;
+            padding: 22px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 13px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        th { background: #e8f0fa; }
+        .progress {
+            background: #dce5ee;
+            height: 12px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .bar {
+            background: #21a179;
+            height: 100%;
+        }
+        .notice {
+            padding: 12px;
+            background: #eef5ff;
+            border-left: 4px solid #1765b0;
+            margin: 10px 0;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>🎓 Student Hub</h2>
+        <a href="lab1.html">Dashboard</a>
+        <a href="results.html">Semester Results</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="exams.html">Exam Schedule</a>
+        <a href="announcements.html">Announcements</a>
+    </div>
+
+    <div class="main">
+        <div class="topbar">
+            <h1>Student Dashboard</h1>
+            <p>Welcome back, Yashwanth!</p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Student Name</h3>
+                <h2>Yashwanth</h2>
+                <p>B.Tech - CSE</p>
+            </div>
+            <div class="card">
+                <h3>Current Semester</h3>
+                <h2>Semester 1</h2>
+                <p>Academic Year 2026-27</p>
+            </div>
+            <div class="card">
+                <h3>Overall Attendance</h3>
+                <h2>88%</h2>
+                <div class="progress">
+                    <div class="bar" style="width:88%"></div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Semester CGPA</h3>
+                <h2>8.6</h2>
+                <p>Sample academic data</p>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h2>Student Information</h2>
+            <p><b>Student ID:</b> 26CSE001</p>
+            <p><b>Department:</b> Computer Science and Engineering</p>
+            <p><b>College:</b> ABC Engineering College</p>
+            <p><b>Email:</b> student@example.com</p>
+        </div>
+
+        <div class="panel">
+            <h2>Subject Attendance</h2>
+            <table>
+                <tr><th>Subject</th><th>Attendance</th></tr>
+                <tr><td>Python Programming</td><td>90%</td></tr>
+                <tr><td>Mathematics</td><td>85%</td></tr>
+                <tr><td>English</td><td>92%</td></tr>
+                <tr><td>Computer Science</td><td>86%</td></tr>
+            </table>
+        </div>
+
+        <div class="panel">
+            <h2>Latest Announcements</h2>
+            <div class="notice">Internal examination timetable will be announced soon.</div>
+            <div class="notice">Submit assignments before the due date.</div>
+            <a href="announcements.html">View all announcements</a>
+        </div>
+    </div>
+
+</body>
+</html>
